@@ -1,34 +1,36 @@
-# Advent of Code Kotlin Template
+# Pemesanan Tiket use kotlin language
 
-[Advent of Code][aoc] – an annual event in December since 2015.
-Every year since then, with the first day of December, a programming puzzles contest is published every day for twenty-four days.
-A set of Christmas-oriented challenges provide any input you have to use to answer using the language of your choice.
-We offer you a template prepared to use with [Kotlin][kotlin] language within this repository.
+![logo kotlin](https://kotlinlang.org/docs/images/kotlin-logo.png)
 
-![][file:cover]
+[![official project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/Kotlin_KotlinPublic_Compiler.svg)](https://teamcity.jetbrains.com/buildConfiguration/Kotlin_KotlinPublic_Compiler?branch=%3Cdefault%3E&buildTypeTab=overview&mode=builds)
+[![Maven Central](https://img.shields.io/maven-central/v/org.jetbrains.kotlin/kotlin-maven-plugin.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.jetbrains.kotlin%22)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Revved up by Gradle Enterprise](https://img.shields.io/badge/Revved%20up%20by-Gradle%20Enterprise-06A0CE?logo=Gradle&labelColor=02303A)](https://ge.jetbrains.com/scans?search.rootProjectNames=Kotlin)
 
-## Workflow
-**Advent of Code Kotlin Template** is a particular type of GitHub repository that lets you speed up the setup phase and start writing your AoC solutions immediately.
+## Kotlin Programming Language
 
-The general idea is straightforward – to create a new project based on this template, you need to log in to your GitHub account and use the **Use this template** green button.
-And remember – **do not fork it!**
+Welcome to [Kotlin](https://kotlinlang.org/)!   
+It is an open-source, statically typed programming language supported and developed by [JetBrains](https://www.jetbrains.com/) and open-source contributors.
 
-After creating a new project based on this template in your account, a dedicated GitHub Actions workflow will start and clean up the code from redundant files.
-It will also personalize code to use your username and project name in namespaces and Gradle properties.
-How cool is that?
+Some handy links:
 
-Right after the [@actions-user][actions-user] actor pushes the second commit to your repository, you're ready to clone it within the IntelliJ IDEA.
+ * [Kotlin Site](https://kotlinlang.org/)
+ * [Getting Started Guide](https://kotlinlang.org/docs/tutorials/getting-started.html)
+ * [Try Kotlin](https://play.kotlinlang.org/)
+ * [Kotlin Standard Library](https://kotlinlang.org/api/latest/jvm/stdlib/index.html)
+ * [Issue Tracker](https://youtrack.jetbrains.com/issues/KT)
+ * [Kotlin YouTube Channel](https://www.youtube.com/channel/UCP7uiEZIqci43m22KDl0sNw)
+ * [Forum](https://discuss.kotlinlang.org/)
+ * [Kotlin Blog](https://blog.jetbrains.com/kotlin/)
+ * [Subscribe to Kotlin YouTube channel](https://www.youtube.com/channel/UCP7uiEZIqci43m22KDl0sNw)
+ * [Follow Kotlin on Twitter](https://twitter.com/kotlin)
+ * [Public Slack channel](https://slack.kotlinlang.org/)
+ * [TeamCity CI build](https://teamcity.jetbrains.com/project.html?tab=projectOverview&projectId=Kotlin)
 
-From now, everything's in your hands!
-Join the [Advent of Code][aoc] contest, solve the Day O1 as soon as it is published.
+## Project Description
 
-For the following days, copy the `Day01.kt` solution file and increment the day number.
-
-> Remember to join the Kotlin contest!
-> 
-> To do that, edit your project's _About_ section with ⚙️ icon and add the `aoc-2022-in-kotlin` topic to your project.
-> 
-> **We will find your repository and count you in our giveaway.** 
+This mobile-based travel application makes it easy to search and make the best bookings. This application includes ordering train and plane tickets and helps customers create their accounts and manage a list of trips they want to take. This makes it very easy for travelers to save more time by ordering tickets. Plus, it has been further developed with a new database and features, namely hotel reservations. Just by using a smartphone and the internet, all types of orders can be made anytime and anywhere.
 
 ## Content
 
@@ -37,90 +39,84 @@ After you create a new project based on the current template repository using th
 ```
 .
 ├── README.md               README file
-├── build.gradle.kts        Gradle configuration created with Kotlin DSL
+├── api
+│   └── web_service_tiket
+├── app
+│   ├── src
+│   │   ├── androidTest
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   ├── AdapterHotel.kt
+│   │   │   │   ├── AdapterTiket.kt
+│   │   │   │   ├── DashboardActivity.kt
+│   │   │   │   ├── EditTiketActivity.kt
+│   │   │   │   ├── HistoryActivity.kt
+│   │   │   │   ├── IklanActivity.kt
+│   │   │   │   ├── InputDataActivity.kt
+│   │   │   │   ├── InputHotelActivity.kt
+│   │   │   │   ├── Ktp.kt
+│   │   │   │   ├── LoginActivity.kt
+│   │   │   │   ├── MainActivity.kt
+│   │   │   │   ├── MapsActivity.kt
+│   │   │   │   ├── MediaHelper.kt
+│   │   │   │   ├── PembayaranFragment.kt
+│   │   │   │   ├── PhotoHelper.kt
+│   │   │   │   ├── PopUp.kt
+│   │   │   │   ├── QrActivity.kt
+│   │   │   │   ├── RiwayatFragment.kt
+│   │   │   │   └── UrlClass.kt
+│   │   │   └── res
+│   │   │   │   └── AndroidManifest.xml
+│   │   └── test
+│   ├── .gitignore          Git repository
+│   ├── build.gradle        Gradle configuration
+│   └── proguard-rules.pro  Tool for shrinking, optimizing, and obfuscating Java
 ├── gradle
 │   └── wrapper             Gradle Wrapper
+├── build.gradle.kts        Gradle configuration created with Kotlin DSL
 ├── gradle.properties       Gradle configuration properties
 ├── gradlew                 *nix Gradle Wrapper script
 ├── gradlew.bat             Windows Gradle Wrapper script
 ├── settings.gradle.kts     Gradle project settings
-└── src
-    ├── Day01.kt            An empty implementation for the first AoC day
-    ├── Day01.txt           An empty file for the Day 01 input data
-    ├── Day01_test.txt      An optional Day 01 test input data used for checks
-    └── Utils.kt            A set of utility methods shared across your days
+└── tiket.sql               Database script using sql
 ```
 
-> Note: All task input files are excluded from the repository with `.gitignore` – we should not post them publicly, as Eric Wastl asks for: [Tweet](https://twitter.com/ericwastl/status/1465805354214830081).
+> Note: All task input files are excluded from the repository with `.gitignore` – we should not post them publicly, as Aldi Rosid Saputra asks for: [Post](https://instagram.com/mr.aldirs?igshid=OGQ5ZDc2ODk2ZA==).
 
-When the first puzzle appears, go to the `Day01.kt` and for each `part1` and `part2` functions, provide an algorithm implementation using the `input` data loaded from the `src/Day01.txt` file.
-This input data is common for both parts, and you can find it on the bottom of each day on the [Advent of Code][aoc] page.
+## Application Features
 
-To read the input data, you can go with the `readInput(name: String)` utility method provided in the [`Utils.kt`][file:utils] file, like:
+If you want to install this application, you can use the following features.
 
-```kotlin
-fun main() {
-    fun part1(input: List<String>): Int {
-        return input.size
-    }
+- Interface (Seekbar, Recycler View, Image View, Video View, Image Button)
+- QR Code & Shared Preferences
+- Multimedia & Google Maps
+- Web Service/Api using PHP language
+- Search & Sort Data
+- Create, Read, Update, and Delete with dialog confirmation
 
-    val input = readInput("Day01")
-    println(part1(input))
-}
-```
+## Installation Steps
 
-The [`Utils.kt`][file:utils] file also contains the `String.md5()` method for generating MD5 hash out of the given string and expects more helper functions for the sake of the [KISS principle][kiss].
+If you want to install this application, there are several steps you must pay attention to.
 
-Each puzzle describes some test conditions, a small portion of the information that helps check if the produced value for the given test input is valid.
-To handle that case, you can put such an input into a separated file and perform a check against the output, like:
+- Gradle version 8.0
+- DistributionUrl=https\://services.gradle.org/distributions/gradle-8.0-bin.zip
+- Download api (web service) and paste to htdocs if using apache
+- Make sure the smartphone and server connections are the same
+- Connect the Android application with an API (web service) by changing the device connection IP
+- [how to change ip in api (web service)](http://www.aldi.com)
+- [how to change ip in project android](http://www.aldi.com)
 
-```kotlin
-fun main() {
-    // ...
-    
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 13)
-}
-```
+## Contribution
 
-The current approach of providing both `part1` and `part2` solutions within the single `Day##.kt` file may sometimes bring a disadvantage due to the first solution calculation when we expect to work on the second part only.
-With simple cases that don't consume too much of your time and resources that can be almost unnoticeable, but when solution takes seconds, it is worth considering breaking daily solution into two separated pieces, like `Day07_part1.kt` and `Day07_part2.kt`.
+We welcome contributions! To contribute to this project, please follow these steps:
 
-The final result of your algorithm will be printed on the screen so that you can pass it to the Advent of Code website.
+1. Fork this project
+2. Create a new branch (`git checkout -b your-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to your branch (`git push origin your-feature`)
+5. Create a pull request
 
-To go with the next day, place the `Day02.txt` file into the `src` with relevant input data and create `Day02.kt` file with a similar code scaffold:
+# License
+Kotlin is distributed under the terms of the Apache License (Version 2.0). See [license folder](license/README.md) for details.
 
-```kotlin
-fun main() {
-    fun part1(input: List<String>): Int {
-        return 0
-    }
-
-    fun part2(input: List<String>): Int {
-        return 0
-    }
-
-    val input = readInput("Day02")
-    println(part1(input))
-    println(part2(input))
-}
-```
-
-## Getting help
-
-If you stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
-
-- [Kotlin docs][docs]
-- [Kotlin Slack][slack]
-- Template [issue tracker][issues]
-
-
-[actions-user]: https://github.com/actions-user
-[aoc]: https://adventofcode.com
-[docs]: https://kotlinlang.org/docs/home.html
-[issues]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template/issues
-[kiss]: https://en.wikipedia.org/wiki/KISS_principle
-[kotlin]: https://kotlinlang.org
-[slack]: https://surveys.jetbrains.com/s3/kotlin-slack-sign-up
-[file:cover]: .github/readme/cover.png
-[file:utils]: src/Utils.kt
+![https://www.apache.org/img/asf-estd-1999-logo.jpg](https://www.apache.org/img/asf-estd-1999-logo.jpg)
