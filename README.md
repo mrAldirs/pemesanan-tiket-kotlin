@@ -37,6 +37,7 @@ This mobile-based travel application makes it easy to search and make the best b
 After you create a new project based on the current template repository using the **Use this template** button, a bare minimal scaffold will appear in your GitHub account with the following structure:
 
 ```
+.
 ├── README.md                                             README file
 ├── api
 │   └── web_service_tiket                                 Api using PHP Language
