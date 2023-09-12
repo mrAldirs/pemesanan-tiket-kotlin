@@ -124,8 +124,8 @@ We welcome contributions! To contribute to this project, please follow these ste
 
 If you stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
-- [Kotlin docs][docs]
-- [Kotlin Slack][slack]
+- [Kotlin docs](https://kotlinlang.org/docs/getting-started.html)
+- [Api References](https://kotlinlang.org/api/latest/jvm/stdlib/)
 
 # License
 Kotlin is distributed under the terms of the Apache License (Version 2.0). See [license folder](license/README.md) for details.
