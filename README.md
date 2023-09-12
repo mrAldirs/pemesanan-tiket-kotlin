@@ -37,8 +37,7 @@ This mobile-based travel application makes it easy to search and make the best b
 After you create a new project based on the current template repository using the **Use this template** button, a bare minimal scaffold will appear in your GitHub account with the following structure:
 
 ```
-.
-├── README.md               README file
+├── README.md                                             README file
 ├── api
 │   └── web_service_tiket
 ├── app
@@ -66,19 +65,19 @@ After you create a new project based on the current template repository using th
 │   │   │   │   ├── RiwayatFragment.kt
 │   │   │   │   └── UrlClass.kt
 │   │   │   └── res
-│   │   │   │   └── AndroidManifest.xml
+│   │   │       └── AndroidManifest.xml
 │   │   └── test
-│   ├── .gitignore          Git repository
-│   ├── build.gradle        Gradle configuration
-│   └── proguard-rules.pro  Tool for shrinking, optimizing, and obfuscating Java
+│   ├── .gitignore                                        Git repository
+│   ├── build.gradle                                      Gradle configuration
+│   └── proguard-rules.pro                                Tool for shrinking, optimizing, and obfuscating Java
 ├── gradle
-│   └── wrapper             Gradle Wrapper
-├── build.gradle.kts        Gradle configuration created with Kotlin DSL
-├── gradle.properties       Gradle configuration properties
-├── gradlew                 *nix Gradle Wrapper script
-├── gradlew.bat             Windows Gradle Wrapper script
-├── settings.gradle.kts     Gradle project settings
-└── tiket.sql               Database script using sql
+│   └── wrapper                                           Gradle Wrapper
+├── build.gradle.kts                                      Gradle configuration created with Kotlin DSL
+├── gradle.properties                                     Gradle configuration properties
+├── gradlew                                               *nix Gradle Wrapper script
+├── gradlew.bat                                           Windows Gradle Wrapper script
+├── settings.gradle.kts                                   Gradle project settings
+└── tiket.sql                                             Database script using sql
 ```
 
 > Note: All task input files are excluded from the repository with `.gitignore` – we should not post them publicly, as Aldi Rosid Saputra asks for: [Post](https://instagram.com/mr.aldirs?igshid=OGQ5ZDc2ODk2ZA==).
