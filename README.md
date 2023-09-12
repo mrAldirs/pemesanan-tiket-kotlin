@@ -39,33 +39,37 @@ After you create a new project based on the current template repository using th
 ```
 ├── README.md                                             README file
 ├── api
-│   └── web_service_tiket
+│   └── web_service_tiket                                 Api using PHP Language
 ├── app
 │   ├── src
 │   │   ├── androidTest
 │   │   ├── main
 │   │   │   ├── java
-│   │   │   │   ├── AdapterHotel.kt
-│   │   │   │   ├── AdapterTiket.kt
-│   │   │   │   ├── DashboardActivity.kt
-│   │   │   │   ├── EditTiketActivity.kt
-│   │   │   │   ├── HistoryActivity.kt
-│   │   │   │   ├── IklanActivity.kt
-│   │   │   │   ├── InputDataActivity.kt
-│   │   │   │   ├── InputHotelActivity.kt
-│   │   │   │   ├── Ktp.kt
-│   │   │   │   ├── LoginActivity.kt
-│   │   │   │   ├── MainActivity.kt
-│   │   │   │   ├── MapsActivity.kt
-│   │   │   │   ├── MediaHelper.kt
-│   │   │   │   ├── PembayaranFragment.kt
-│   │   │   │   ├── PhotoHelper.kt
-│   │   │   │   ├── PopUp.kt
-│   │   │   │   ├── QrActivity.kt
-│   │   │   │   ├── RiwayatFragment.kt
-│   │   │   │   └── UrlClass.kt
-│   │   │   └── res
-│   │   │       └── AndroidManifest.xml
+│   │   │   │   ├── AdapterHotel.kt                       Adapter file kotlin
+│   │   │   │   ├── AdapterTiket.kt                       Adapter file kotlin
+│   │   │   │   ├── DashboardActivity.kt                  Activity file code kotlin
+│   │   │   │   ├── EditTiketActivity.kt                  Activity file code kotlin
+│   │   │   │   ├── HistoryActivity.kt                    Activity file code kotlin
+│   │   │   │   ├── IklanActivity.kt                      Activity file code kotlin
+│   │   │   │   ├── InputDataActivity.kt                  Activity file code kotlin
+│   │   │   │   ├── InputHotelActivity.kt                 Activity file code kotlin
+│   │   │   │   ├── Ktp.kt                                File code kotlin
+│   │   │   │   ├── LoginActivity.kt                      Activity file code kotlin
+│   │   │   │   ├── MainActivity.kt                       Activity file code kotlin
+│   │   │   │   ├── MapsActivity.kt                       Activity file code kotlin maps location
+│   │   │   │   ├── MediaHelper.kt                        File code to take photos from internal storage
+│   │   │   │   ├── PembayaranFragment.kt                 Fragment file code kotlin
+│   │   │   │   ├── PhotoHelper.kt                        File code to take photo with camera
+│   │   │   │   ├── PopUp.kt                              Fragment dialog file code kotlin
+│   │   │   │   ├── QrActivity.kt                         Activity file code to make Qr
+│   │   │   │   ├── RiwayatFragment.kt                    Fragment file code kotlin
+│   │   │   │   └── UrlClass.kt                           File code to change ip
+│   │   │   ├── res
+│   │   │   │   ├── drawable                              Icon and images
+│   │   │   │   ├── layout                                Create a view
+│   │   │   │   ├── raw                                   Mp4 or any videos folder
+│   │   │   │   └── etc                                   etc
+│   │   │   └── AndroidManifest.xml
 │   │   └── test
 │   ├── .gitignore                                        Git repository
 │   ├── build.gradle                                      Gradle configuration
