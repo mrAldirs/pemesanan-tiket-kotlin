@@ -110,7 +110,7 @@ If you want to install this application, there are several steps you must pay at
 - [how to change ip in api (web service)](http://www.aldi.com)
 - [how to change ip in project android](http://www.aldi.com)
 
-## Contribution
+## Contributions
 
 We welcome contributions! To contribute to this project, please follow these steps:
 
@@ -119,6 +119,13 @@ We welcome contributions! To contribute to this project, please follow these ste
 3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to your branch (`git push origin your-feature`)
 5. Create a pull request
+
+## Getting help
+
+If you stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
+
+- [Kotlin docs][docs]
+- [Kotlin Slack][slack]
 
 # License
 Kotlin is distributed under the terms of the Apache License (Version 2.0). See [license folder](license/README.md) for details.
